@@ -23,6 +23,4 @@ install.packages(c("stringi", "rlang", "glue", "gert", "usethis"), dependencies 
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 usethis::use_git()
-usethis::use_github()
-
-
+usethis::use_github() 

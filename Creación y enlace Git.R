@@ -11,6 +11,7 @@ dir.create("datos/crudos")
 dir.create("datos/procesados")
 dir.create("outputs")
 dir.create("docs")
+dir.create("scripts")
 
 #Enlace con Git y GutHub
 
@@ -24,3 +25,4 @@ usethis::create_github_token()
 gitcreds::gitcreds_set()
 usethis::use_git()
 usethis::use_github() 
+

@@ -19,6 +19,7 @@ usethis::use_git_config(
   user.name = "Camila-Ormachea",
   user.email = "a20220717@pucp.edu.pe"
 )
+install.packages(c("stringi", "rlang", "glue", "gert", "usethis"), dependencies = TRUE)
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 usethis::use_git()

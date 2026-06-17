@@ -6,4 +6,22 @@
 
 #Creamos carpetas-----------------------
 
-dir
+dir.create("datos")
+dir.create("datos/crudos")
+dir.create("datos/procesados")
+dir.create("outputs")
+dir.create("docs")
+
+#Enlace con Git y GutHub
+
+install.packages("usethis")
+usethis::use_git_config(
+  user.name = "Camila-Ormachea",
+  user.email = "a20220717@pucp.edu.pe"
+)
+usethis::create_github_token()
+gitcreds::gitcreds_set()
+usethis::use_git()
+usethis::use_github()
+
+

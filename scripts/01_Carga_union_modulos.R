@@ -30,4 +30,20 @@ enaho_2025 <- mod400 %>%
   left_join(mod300, by = keys_personas) %>% 
   left_join(mod500, by = keys_personas) 
 
+keys_pc <-c(keys_hogar, "CODPERSO")
+
+enaho_2025 <- enaho_2025 %>% 
+  left_join(mod84, by = keys_pc)
+
+gc()
+
+#4. Exportamos base de datos creada-------------------------------------------
+install.packages("arrow")
+library(arrow)
+renv::snapshot()
+
+
+
+
+
 

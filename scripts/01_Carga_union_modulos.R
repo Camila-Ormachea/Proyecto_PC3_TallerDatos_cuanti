@@ -10,14 +10,24 @@ library(rio)
 library(tidyverse)
 library(janitor)
 library(readr)
+library(dplyr)
 renv::snapshot()
 install_formats()
 
 #2. Importar datos-------------------
 mod300 <- import("datos/crudos/Enaho01A-2025-300.csv", encoding = "Latin-1") 
-mod12 <- import("datos/crudos/Enaho01-2025-606.csv", encoding = "Latin-1")
+mod400 <- import("datos/crudos/Enaho01A-2025-400.csv", encoding = "Latin-1")
+mod500 <- import("datos/crudos/Enaho01a-2025-500.csv", encoding = "Latin-1")
+mod84 <- import("datos/crudos/Enaho01-2025-800B.csv", encoding = "Latin-1")
 
-#3. 
+#3. Unión de bases de datos
 
+keys_hogar <- c("AÑO", "MES", "CONGLOME", "VIVIENDA", "HOGAR", "UBIGEO", 
+                "DOMINIO", "ESTRATO")
+keys_personas <- c(keys_hogar, "CODPERSO")
+
+enaho_2025 <- mod400 %>% 
+  left_join(mod300, by = keys_personas) %>% 
+  left_join(mod500, by = keys_personas) 
 
 

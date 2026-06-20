@@ -17,12 +17,12 @@ El proyecto está desarrollado utilizando la versión 4.4.1 de **R**, con las si
 
 ## Estructura del directorio
 El directorio se organiza a través de la siguiente estructura de carpetas: 
-├── Creación_R_Project/    # Script general: Configuración del entorno, creación de carpetas y enlace a GitHub
-├── datos/                 # Módulos originales de la ENAHO en formato .csv
-├ ├── crudos/              # Bases maestras procesadas en formato .parquet (Output de scripts 01 y 02)
-  ├── limpios/
-├── scripts/
-├ ├── 01_Importar_modulos_ENAHO.R         # Carga masiva y cruce (merge) de los módulos 300 ,400, 500 y Participación ciudadana
+-Proyecto_PC3_TallerDatos_cuanti/    # Script general: Configuración del entorno, creación de carpetas y enlace a GitHub
+  -datos/                 # Módulos originales de la ENAHO en formato .csv
+    -crudos/              # Bases maestras procesadas en formato .parquet (Output de scripts 01 y 02)
+    -limpios/
+  -scripts/
+-01_Importar_modulos_ENAHO.R         # Carga masiva y cruce (merge) de los módulos 300,400, 500 y Participación ciudadana
   ├── 02_Limpieza_ENAHO.R         # Limpieza, recodificación y creación de variables 
   ├── 03_Exploración.R      # Análisis descriptivo y generación de crecues bivariados
   ├── 04_Informe_Final.Rmd  # Código fuente dinámico para la elabración del reporte

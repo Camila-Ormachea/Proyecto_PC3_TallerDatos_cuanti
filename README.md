@@ -10,8 +10,8 @@ Los módulos utilizados son los siguientes:
 * Módulo 800B: Participación Ciudadana
 
 El análisis explora la relación entre las siguientes dimensiones:
-**Demográficas**: quintiles de ingreso, grupos de edad, nivel educativo, ubicación geográfica
-**Institucionales y de seguridad social**: Acceso a la salud, acceso a la educación 
+* Demográficas: quintiles de ingreso, grupos de edad, nivel educativo, ubicación geográfica
+* Institucionales y de seguridad social: acceso a la salud, acceso a la educación 
 
 ## Programas y librerías utilizadas
 El proyecto está desarrollado utilizando la versión 4.4.1 de **R**, con las siguientes librerías:

@@ -1,5 +1,5 @@
 # Análisis sobre participación ciudadana utilizando datos de la ENAHO
-##Descripción del proyecto: 
+## Descripción del proyecto: 
 Este repositorio incluye el código y el flujo de trabajo inicial para el "Análisis sobre los determinantes socioeconómicos de la participación ciudadana en el Perú" elaborado para el curso de Taller de procesamiento de datos 2026-1 de la PUCP.
 Se utilizan datos de la Encuesta Nacional de Hogares (ENAHO) de 2021 a 2025 trabajados en R. 
 

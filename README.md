@@ -11,18 +11,19 @@ Los módulos utilizados son los siguientes:
 
 El análisis explora la relación entre las siguientes dimensiones:
 * Demográficas: quintiles de ingreso, grupos de edad, nivel educativo, ubicación geográfica
-* Institucionales y de seguridad social: acceso a la salud, acceso a la educación 
+* Institucionales y de seguridad social: acceso a la salud, acceso a la educación y pertenencia a alguna agrupación, organización y/o asociación política
 
 ## Programas y librerías utilizadas
 El proyecto está desarrollado utilizando la versión 4.4.1 de **R**, con las siguientes librerías:
-* ´tidyverse´: para el procesamiento y gráficos (dplyr y ggplot2)
-* ´Usethis´: para la automatización y configuración inicial del proyecto en GitHub
-* ´rio´: importación de datos
-* ´arrow´: exportación e importación de bases de datos en formato parquet
-* ´janitor´: limpieza de nombres de la ENAHO
-* ´stringr´: para remover los espacios en blanco
-* ´readr´: para la lectura de los datos en csv separados por comas´
-  La versión de todas las librerías se controla utilizando ´renv´
+* Tidyverse: para el procesamiento y gráficos (dplyr y ggplot2)
+* Usethis: para la automatización y configuración inicial del proyecto en GitHub
+* Rio: importación de datos
+* Arrow: exportación e importación de bases de datos en formato parquet
+* Janitor: limpieza de nombres de la ENAHO
+* Stringr: para remover los espacios en blanco
+* Readr: para la lectura de los datos en csv separados por comas´
+
+La versión de todas las librerías se controla utilizando ´renv´
 
 ## Estructura del directorio
 El directorio se organiza a través de la siguiente estructura de carpetas: 
@@ -31,7 +32,7 @@ El directorio se organiza a través de la siguiente estructura de carpetas:
     * crudos/                   # Módulos originales de la ENAHO en formato .csv
     * limpios/                  # Bases maestras procesadas en formato .parquet (Output de scripts 01 y 02)
 * scripts/
-    *01_Carga_union_modulos     # Carga masiva y cruce (merge) de los módulos 300, 400, 500 y de Participación ciudadana
+    * 01_Carga_union_modulos     # Carga masiva y cruce (merge) de los módulos 300, 400, 500 y de Participación ciudadana
 * docs/                         # La carpeta de documentación teórica y metodológica del proyecto
 * renv/                         # Carpeta aislada del entorno local de paquetes
 * renv.lock                     # "Cápsula del tiempo": Registro de las versiones de las librerías
